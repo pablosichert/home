@@ -1,7 +1,13 @@
+# Ignore all by default
 *
 */
 !.gitignore
+
 !.gitconfig
 !.inputrc
 !.bashrc
 
+# Atom editor config files
+!.atom
+.atom/*
+!.atom/config.cson

@@ -1,0 +1,18 @@
+"*":
+  core:
+    packagesWithKeymapsDisabled: [
+      "tree-view"
+    ]
+    themes: [
+      "one-light-ui"
+      "one-light-syntax"
+    ]
+  editor:
+    invisibles: {}
+    showInvisibles: true
+  "exception-reporting":
+    userId: "68618195-88bd-92dc-6826-4cbb3701fd8a"
+  minimap: {}
+  "tree-view": {}
+  welcome:
+    showOnStartup: false
