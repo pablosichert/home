@@ -43,6 +43,19 @@ fi
 
 hr
 
+APT_PPAS="
+  noobslab/themes
+  numix/ppa
+"
+
+for p in $APT_PPAS ; do
+    sudo apt-add-repository -y ppa:$p
+done
+
+sudo apt-get update
+
+hr
+
 APT_PACKAGES="
   git
   keepass2
@@ -50,6 +63,9 @@ APT_PACKAGES="
   pidgin-otr
   vim
   curl
+  unity-tweak-tool
+  ultra-flat-theme
+  numix-icon-theme
 "
 
 for p in $APT_PACKAGES ; do
