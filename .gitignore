@@ -2,4 +2,6 @@
 */
 !.gitignore
 !.gitconfig
+!.inputrc
+!.bashrc
 
