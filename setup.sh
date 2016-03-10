@@ -89,6 +89,7 @@ hr
 
 ATOM_PACKAGES="
   linter-eslint
+  language-babel
   minimap
 "
 
