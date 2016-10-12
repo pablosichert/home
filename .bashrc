@@ -8,6 +8,12 @@ case $- in
       *) return;;
 esac
 
+DIM="\e[2m"
+BLUE="\e[38;2;0;160;255m"
+END="\e[0m"
+
+PS1="\[$DIM\]\W\[$END\] \[$BLUE\]$\[$END\] "
+
 # Don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
