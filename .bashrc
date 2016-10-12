@@ -45,3 +45,43 @@ alias l='ls -CF'
 
 # Used to locally install and use "-g" npm packages
 export PATH="$PATH:node_modules/.bin"
+
+function g() {
+    COMMAND="$1"
+    shift
+
+    case "$COMMAND" in
+        "amend")
+            git commit --amend "$@"
+        ;;
+        "diff")
+            git diff "$@"
+        ;;
+        "fixup")
+            COMMIT="$1"
+            shift
+            git commit --fixup="$COMMIT" "$@"
+            git rebase -i --autosquash "$COMMIT"~1 "$@"
+            # unshift
+            set -- "$1" "$@"
+        ;;
+        "force")
+            git push --force-with-lease "$@"
+        ;;
+        "log")
+            git log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset' "$@"
+        ;;
+        "pick")
+            git cherry-pick "$@"
+        ;;
+        "rebase")
+            git rebase -i "$@"
+        ;;
+        "staged")
+            git diff --staged "$@"
+        ;;
+        *)
+            git $COMMAND "$@"
+        ;;
+    esac
+}
