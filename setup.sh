@@ -105,16 +105,6 @@ for p in $ATOM_PACKAGES ; do
   hr
 done
 
-echo Setup nvm
-
-for p in build-essential libssl-dev ; do
-  if shouldInstall $p ; then
-    sudo apt-get install -y $p
-  fi
-done
-
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.30.2/install.sh | bash
-
 hr
 
 # Installing spotify client from testing repository instead of
