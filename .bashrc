@@ -85,3 +85,22 @@ function g() {
         ;;
     esac
 }
+
+add() { g add "$@"; }
+amend() { g amend "$@"; }
+blame() { g blame "$@"; }
+branch() { g branch "$@"; }
+commit() { g commit "$@"; }
+diff() { g diff "$@"; }
+fixup() { g fixup "$@"; }
+force() { g force "$@"; }
+log() { g log "$@"; }
+pick() { g pick "$@"; }
+pull() { g pull "$@"; }
+push() { g push "$@"; }
+rebase() { g rebase "$@"; }
+reset() { g reset "$@"; }
+show() { g show "$@"; }
+staged() { g staged "$@"; }
+stash() { g stash "$@"; }
+status() { g status "$@"; }
