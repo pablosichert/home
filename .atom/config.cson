@@ -16,6 +16,11 @@
     userId: "68618195-88bd-92dc-6826-4cbb3701fd8a"
   minimap:
     absoluteMode: true
+    plugins:
+      "git-diff": true
+      "git-diffDecorationsZIndex": 0
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
   tabs:
     usePreviewTabs: true
   "tree-view": {}

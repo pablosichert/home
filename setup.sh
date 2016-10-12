@@ -91,6 +91,8 @@ ATOM_PACKAGES="
   linter-eslint
   language-babel
   minimap
+  minimap-git-diff
+  minimap-highlight-selected
 "
 
 # install atom plugin if not already installed
