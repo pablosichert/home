@@ -105,3 +105,5 @@ show() { g show "$@"; }
 staged() { g staged "$@"; }
 stash() { g stash "$@"; }
 status() { g status "$@"; }
+
+alias cached=staged
