@@ -90,6 +90,7 @@ add() { g add "$@"; }
 amend() { g amend "$@"; }
 blame() { g blame "$@"; }
 branch() { g branch "$@"; }
+checkout() { g checkout "$@"; }
 commit() { g commit "$@"; }
 diff() { g diff "$@"; }
 fixup() { g fixup "$@"; }
