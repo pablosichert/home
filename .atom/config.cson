@@ -1,4 +1,7 @@
 "*":
+  "atom-beautify":
+    general:
+      analytics: false
   core:
     destroyEmptyPanes: false
     packagesWithKeymapsDisabled: [

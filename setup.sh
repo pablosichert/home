@@ -88,6 +88,7 @@ fi
 hr
 
 ATOM_PACKAGES="
+  atom-beautify
   linter-eslint
   language-babel
   minimap
