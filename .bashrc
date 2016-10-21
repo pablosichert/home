@@ -91,13 +91,16 @@ function g() {
 
 add() { g add "$@"; }
 amend() { g amend "$@"; }
+bisect() { g bisect "$@"; }
 blame() { g blame "$@"; }
 branch() { g branch "$@"; }
 checkout() { g checkout "$@"; }
 cleanup() { g cleanup "$@"; }
+clone() { g clone "$@"; }
 commit() { g commit "$@"; }
 diff() { g diff "$@"; }
 fixup() { g fixup "$@"; }
+fetch() { g fetch "$@"; }
 force() { g force "$@"; }
 log() { g log "$@"; }
 pick() { g pick "$@"; }
@@ -109,5 +112,6 @@ show() { g show "$@"; }
 staged() { g staged "$@"; }
 stash() { g stash "$@"; }
 status() { g status "$@"; }
+tag() { g tag "$@"; }
 
 alias cached=staged
