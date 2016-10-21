@@ -54,6 +54,9 @@ function g() {
         "amend")
             git commit --amend "$@"
         ;;
+        "cleanup")
+            git branch --merged | grep -v "\*" | xargs git branch -d
+        ;;
         "diff")
             git diff "$@"
         ;;
@@ -91,6 +94,7 @@ amend() { g amend "$@"; }
 blame() { g blame "$@"; }
 branch() { g branch "$@"; }
 checkout() { g checkout "$@"; }
+cleanup() { g cleanup "$@"; }
 commit() { g commit "$@"; }
 diff() { g diff "$@"; }
 fixup() { g fixup "$@"; }
