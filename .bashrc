@@ -116,6 +116,7 @@ fixup() { g fixup "$@"; }
 fetch() { g fetch "$@"; }
 force() { g force "$@"; }
 log() { g log "$@"; }
+merge() { g merge "$@"; }
 pick() { g pick "$@"; }
 pull() { g pull "$@"; }
 push() { g push "$@"; }
