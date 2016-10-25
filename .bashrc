@@ -121,6 +121,7 @@ pick() { g pick "$@"; }
 pull() { g pull "$@"; }
 push() { g push "$@"; }
 rebase() { g rebase "$@"; }
+remote() { g remote "$@"; }
 reset() { g reset "$@"; }
 show() { g show "$@"; }
 staged() { g staged "$@"; }
