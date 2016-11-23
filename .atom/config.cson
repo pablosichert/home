@@ -7,6 +7,7 @@
     packagesWithKeymapsDisabled: [
       "tree-view"
     ]
+    telemetryConsent: "limited"
     themes: [
       "one-light-ui"
       "one-light-syntax"
