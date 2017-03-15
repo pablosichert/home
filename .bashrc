@@ -59,6 +59,9 @@ alias l='ls -CF'
 # Used to locally install and use "-g" npm packages
 export PATH="$PATH:node_modules/.bin"
 
+# Go version manager
+source ~/.gvm/scripts/gvm
+
 function g() {
     COMMAND="$1"
     shift

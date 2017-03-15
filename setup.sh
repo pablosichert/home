@@ -121,3 +121,25 @@ if shouldInstall spotify-client ; then
 fi
 
 hr
+
+if shouldInstall gvm ; then
+  sudo apt-get install -y curl git mercurial make binutils bison gcc build-essential
+  curl -sS https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer | bash
+  source ~/.gvm/scripts/gvm
+
+  echo Done: gvm
+fi
+
+hr
+
+if shouldInstall go ; then
+  LATEST_GO_VERSION="$(gvm listall | grep -oE 'go[0-9](\.[0-9](\.[0-9])?)?$' | tail -1)"
+
+  # Go 1.4 required to compile versions <1.4
+  gvm install go1.4
+  gvm use go1.4
+  gvm install $LATEST_GO_VERSION
+  gvm use $LATEST_GO_VERSION --default
+
+  echo Done: go
+fi
