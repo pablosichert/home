@@ -13,6 +13,7 @@
       "one-light-syntax"
     ]
   editor:
+    fontFamily: "Fira Code"
     invisibles: {}
     showInvisibles: true
     tabLength: 4
