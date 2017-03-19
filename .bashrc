@@ -56,6 +56,9 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
+alias copy='xsel -i'
+alias paste='xsel -o'
+
 # Used to locally install and use "-g" npm packages
 export PATH="$PATH:node_modules/.bin"
 
