@@ -13,3 +13,11 @@
 !.atom
 .atom/*
 !.atom/config.cson
+
+# Font files
+!.local
+.local/*
+!.local/share
+.local/share/*
+!.local/share/fonts
+!.local/share/fonts/*
