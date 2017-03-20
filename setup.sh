@@ -91,6 +91,7 @@ ATOM_PACKAGES="
   atom-beautify
   linter-eslint
   language-babel
+  go-plus
   minimap
   minimap-git-diff
   minimap-highlight-selected

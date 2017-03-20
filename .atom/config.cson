@@ -19,6 +19,8 @@
     tabLength: 4
   "exception-reporting":
     userId: "68618195-88bd-92dc-6826-4cbb3701fd8a"
+  "go-plus":
+    panelDisplayMode: "closed"
   minimap:
     absoluteMode: true
     plugins:
