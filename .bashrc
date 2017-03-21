@@ -60,10 +60,16 @@ alias copy='xsel -i'
 alias paste='xsel -o'
 
 # Used to locally install and use "-g" npm packages
-export PATH="$PATH:node_modules/.bin"
+PATH=$PATH:node_modules/.bin
 
 # Go version manager
 source ~/.gvm/scripts/gvm
+
+# Configure go path (overwrite GOPATH set by gvm)
+export GOPATH=~/go
+
+# Reference to go binaries
+PATH=$PATH:$GOPATH/bin
 
 function g() {
     COMMAND="$1"
@@ -136,3 +142,6 @@ status() { g status "$@"; }
 tag() { g tag "$@"; }
 
 alias cached=staged
+
+# Make PATH available for child processes
+export PATH
