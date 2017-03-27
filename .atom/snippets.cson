@@ -1,0 +1,15 @@
+'.source.js':
+  'React class':
+    'prefix': 'react'
+    'body': """
+      import React, { Component } from 'react';
+
+      export default class Foo extends Component {
+          render() {
+              return (
+                  <div/>
+              );
+          }
+      }
+
+    """

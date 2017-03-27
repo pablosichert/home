@@ -13,6 +13,7 @@
 !.atom
 .atom/*
 !.atom/config.cson
+!.atom/snippets.cson
 
 # Font files
 !.local
