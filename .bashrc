@@ -62,6 +62,9 @@ alias paste='xsel -o'
 # Used to locally install and use "-g" npm packages
 PATH=$PATH:node_modules/.bin
 
+# Path to global binaries from npm packages installed through yarn
+PATH="$(yarn global bin):$PATH"
+
 # Go version manager
 source ~/.gvm/scripts/gvm
 
