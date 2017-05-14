@@ -9,6 +9,10 @@
 
 !setup.sh
 
+# iTerm2 profile
+!.iTerm2
+!.iTerm2/*
+
 # Atom editor config files
 !.atom
 .atom/*
