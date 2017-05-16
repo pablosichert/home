@@ -8,6 +8,8 @@
 !.bashrc
 
 !setup.sh
+!setup_ubuntu.sh
+!setup_macOS.sh
 
 # iTerm2 profile
 !.iTerm2
