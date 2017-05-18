@@ -1,10 +1,10 @@
 #!/bin/bash
 case "$OSTYPE" in
   darwin*)
-    SETUP=./setup_macOS.sh
+    SETUP=~/setup/setup_macOS.sh
   ;;
   linux*)
-    SETUP=./setup_ubuntu.sh
+    SETUP=~/setup/setup_ubuntu.sh
   ;;
 esac
 
