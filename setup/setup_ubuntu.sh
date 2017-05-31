@@ -95,6 +95,7 @@ ATOM_PACKAGES="
   minimap
   minimap-git-diff
   minimap-highlight-selected
+  pdf-view
 "
 
 # install atom plugin if not already installed
