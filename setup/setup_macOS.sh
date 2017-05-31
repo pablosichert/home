@@ -41,6 +41,8 @@ ATOM_PACKAGES="
   minimap-git-diff
   minimap-highlight-selected
   pdf-view
+  latex
+  language-latex
 "
 
 # Install atom plugin if not already installed
