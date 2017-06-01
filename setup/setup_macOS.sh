@@ -32,24 +32,4 @@ brew cask install atom
 
 hr
 
-ATOM_PACKAGES="
-  atom-beautify
-  linter-eslint
-  language-babel
-  go-plus
-  minimap
-  minimap-git-diff
-  minimap-highlight-selected
-  pdf-view
-  latex
-  language-latex
-"
-
-# Install atom plugin if not already installed
-echo "Installing: atom packages"
-for p in $ATOM_PACKAGES ; do
-  echo "Installing: $p"
-  if ! [ -d ~/.atom/packages/$p ] ; then
-    apm install $p
-  fi
-done
+source ~/setup/atom-packages.sh
