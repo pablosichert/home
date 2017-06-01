@@ -2,6 +2,7 @@ ATOM_PACKAGES="
   atom-beautify
   linter-eslint
   language-babel
+  prettier-atom
   go-plus
   minimap
   minimap-git-diff
