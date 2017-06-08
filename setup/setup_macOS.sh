@@ -33,3 +33,16 @@ brew cask install atom
 hr
 
 source ~/setup/atom-packages.sh
+
+hr
+
+# Install n
+echo "Installing: n"
+if ! type n &>/dev/null; then
+  DIR=~/Github/tj
+  mkdir -p $DIR
+  cd $DIR
+  git clone https://github.com/tj/n
+  cd n
+  make install
+fi
