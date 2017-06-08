@@ -46,3 +46,9 @@ if ! type n &>/dev/null; then
   cd n
   make install
 fi
+
+hr
+
+# Install yarn
+echo "Installing: yarn"
+brew install yarn --ignore-dependencies
