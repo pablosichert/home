@@ -164,16 +164,21 @@
 	</data>
 	<key>NSTableView Supports v2 KeyBingingTable</key>
 	<true/>
+	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
+	<dict>
+		<key>TB Is Shown</key>
+		<integer>1</integer>
+	</dict>
 	<key>NSWindow Frame ProfilesPanel</key>
 	<string>313 60 735 382 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>495 323 796 473 0 0 1440 877 </string>
+	<string>495 284 918 512 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>485 326 570 452 0 0 1440 877 </string>
+	<string>716 229 570 452 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>693 32 570 452 0 0 1440 877 </string>
+	<string>511 306 570 452 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>197 47 570 452 0 0 1440 877 </string>
+	<string>560 295 570 452 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -787,6 +792,8 @@
 			<string>xterm-256color</string>
 			<key>Transparency</key>
 			<real>0.0</real>
+			<key>Triggers</key>
+			<array/>
 			<key>Unlimited Scrollback</key>
 			<true/>
 			<key>Use Bold Font</key>
@@ -812,7 +819,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>5592763E-7783-4566-8E8C-170A80C703BF</string>
 	<key>NoSyncLastTipTime</key>
-	<real>516411696.19727802</real>
+	<real>517949000.88075799</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -826,6 +833,14 @@
 		<string>000</string>
 		<string>0000</string>
 		<string>0001</string>
+		<string>0002</string>
+		<string>0003</string>
+		<string>0004</string>
+		<string>0005</string>
+		<string>0006</string>
+		<string>0007</string>
+		<string>0008</string>
+		<string>0009</string>
 	</array>
 	<key>PointerActions</key>
 	<dict>
@@ -871,8 +886,10 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-05-13T23:41:35Z</date>
+	<date>2017-06-01T11:36:20Z</date>
 	<key>SUSendProfileInfo</key>
+	<false/>
+	<key>ShowFullScreenTabBar</key>
 	<false/>
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
