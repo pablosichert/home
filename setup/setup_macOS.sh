@@ -36,6 +36,12 @@ source ~/setup/atom-packages.sh
 
 hr
 
+# Install httpie
+echo "Installing: httpie"
+brew install httpie
+
+hr
+
 # Install n
 echo "Installing: n"
 if ! type n &>/dev/null; then
