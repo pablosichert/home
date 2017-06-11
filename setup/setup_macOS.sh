@@ -58,3 +58,8 @@ hr
 # Install yarn
 echo "Installing: yarn"
 brew install yarn --ignore-dependencies
+
+hr
+
+echo "Installing: Timer"
+brew cask install michaelvillar-timer
