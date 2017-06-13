@@ -61,5 +61,10 @@ brew install yarn --ignore-dependencies
 
 hr
 
+echo "Installing: ExifTool"
+brew install exiftool
+
+hr
+
 echo "Installing: Timer"
 brew cask install michaelvillar-timer
