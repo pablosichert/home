@@ -68,3 +68,8 @@ hr
 
 echo "Installing: Timer"
 brew cask install michaelvillar-timer
+
+hr
+
+echo "Installing: Anki"
+brew cask install anki
