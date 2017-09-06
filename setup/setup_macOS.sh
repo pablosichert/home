@@ -61,6 +61,11 @@ brew install yarn --ignore-dependencies
 
 hr
 
+echo "Installing: SQLite Browser"
+brew cask install sqlitebrowser
+
+hr
+
 echo "Installing: ExifTool"
 brew install exiftool
 
