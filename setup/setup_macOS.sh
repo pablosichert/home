@@ -36,6 +36,9 @@ source ~/setup/atom-packages.sh
 
 hr
 
+echo "Installing: docker"
+brew cask install docker
+
 # Install httpie
 echo "Installing: httpie"
 brew install httpie
