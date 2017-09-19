@@ -64,6 +64,11 @@ brew install yarn --ignore-dependencies
 
 hr
 
+echo "Installing: GraphicsMagick"
+brew install graphicsmagick
+
+hr
+
 echo "Installing: SQLite Browser"
 brew cask install sqlitebrowser
 
