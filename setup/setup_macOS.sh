@@ -99,5 +99,10 @@ brew cask install google-backup-and-sync
 
 hr
 
+echo "Installing: Dropbox"
+brew cask install dropbox
+
+hr
+
 echo "Installing: Spotify"
 brew cask install spotify
