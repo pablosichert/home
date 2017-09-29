@@ -6,6 +6,7 @@
 !.gitconfig
 !.inputrc
 !.bashrc
+!.bash_profile
 
 !setup
 !setup/*
