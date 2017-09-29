@@ -26,6 +26,11 @@ brew cask >/dev/null
 
 hr
 
+echo "Installing: brew cask fonts"
+brew tap caskroom/fonts
+
+hr
+
 echo "Installing: iTerm2"
 brew cask install iterm2
 
