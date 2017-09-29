@@ -31,6 +31,11 @@ brew tap caskroom/fonts
 
 hr
 
+echo "Installing: Fira Code font"
+brew cask install font-fira-code
+
+hr
+
 echo "Installing: iTerm2"
 brew cask install iterm2
 
