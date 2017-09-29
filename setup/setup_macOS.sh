@@ -91,3 +91,8 @@ hr
 
 echo "Installing: Anki"
 brew cask install anki
+
+hr
+
+echo "Installing: Spotify"
+brew cask install spotify
