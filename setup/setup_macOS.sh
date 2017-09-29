@@ -26,6 +26,11 @@ brew cask >/dev/null
 
 hr
 
+echo "Installing: iTerm2"
+brew cask install iterm2
+
+hr
+
 # Install Atom
 echo "Installing: atom"
 brew cask install atom
