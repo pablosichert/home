@@ -94,5 +94,10 @@ brew cask install anki
 
 hr
 
+echo "Installing: Google Backup & Sync"
+brew cask install google-backup-and-sync
+
+hr
+
 echo "Installing: Spotify"
 brew cask install spotify
