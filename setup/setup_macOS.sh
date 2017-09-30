@@ -46,6 +46,11 @@ brew cask install iterm2
 
 hr
 
+echo "Installing: Google Chrome"
+brew cask install google-chrome
+
+hr
+
 # Install Atom
 echo "Installing: atom"
 brew cask install atom
