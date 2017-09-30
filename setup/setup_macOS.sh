@@ -114,5 +114,10 @@ brew cask install dropbox
 
 hr
 
+echo "Installing: Amazon Drive"
+brew cask install amazon-drive
+
+hr
+
 echo "Installing: Spotify"
 brew cask install spotify
