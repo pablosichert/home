@@ -12,6 +12,11 @@ hr() {
   echo "${LINE}"
 }
 
+echo "Configure dock size"
+defaults write com.apple.dock tilesize -int 45 && killall Dock
+
+hr
+
 # Install Homebrew
 echo "Installing: brew"
 if ! type brew &>/dev/null; then
