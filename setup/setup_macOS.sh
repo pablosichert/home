@@ -17,6 +17,11 @@ defaults write com.apple.dock tilesize -int 45 && killall Dock
 
 hr
 
+echo "Set hibernate mode when using battery"
+pmset -b hibernatemode 25
+
+hr
+
 # Install Homebrew
 echo "Installing: brew"
 if ! type brew &>/dev/null; then
