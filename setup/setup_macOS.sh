@@ -146,3 +146,8 @@ hr
 
 echo "Installing: Qbserve"
 brew cask install qbserve
+
+hr
+
+echo "Installing: Focus"
+brew cask install focus
