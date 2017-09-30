@@ -141,3 +141,8 @@ hr
 
 echo "Installing: Spotify"
 brew cask install spotify
+
+hr
+
+echo "Installing: RescueTime"
+brew cask install rescuetime
