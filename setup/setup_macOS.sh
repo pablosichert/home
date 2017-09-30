@@ -119,5 +119,10 @@ brew cask install amazon-drive
 
 hr
 
+echo "Installing: WhatsApp"
+brew cask install whatsapp
+
+hr
+
 echo "Installing: Spotify"
 brew cask install spotify
