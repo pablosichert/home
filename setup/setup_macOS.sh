@@ -144,5 +144,5 @@ brew cask install spotify
 
 hr
 
-echo "Installing: RescueTime"
-brew cask install rescuetime
+echo "Installing: Qbserve"
+brew cask install qbserve
