@@ -156,3 +156,8 @@ hr
 
 echo "Installing: Focus"
 brew cask install focus
+
+hr
+
+echo "Installing: Coconut Battery"
+brew cask install coconutbattery
