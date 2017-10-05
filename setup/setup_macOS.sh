@@ -139,6 +139,11 @@ brew cask install whatsapp
 
 hr
 
+echo "Installing: Gitter"
+brew cask install gitter
+
+hr
+
 echo "Installing: Spotify"
 brew cask install spotify
 
