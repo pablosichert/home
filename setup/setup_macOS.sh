@@ -15,6 +15,9 @@ hr() {
 echo "Configure dock size"
 defaults write com.apple.dock tilesize -int 45 && killall Dock
 
+echo "Show hidden files in Finder"
+defaults write com.apple.finder AppleShowAllFiles 1
+
 hr
 
 echo "Set hibernate mode when using battery"
