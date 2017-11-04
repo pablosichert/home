@@ -59,6 +59,8 @@ alias l='ls -CF'
 alias copy='xsel -i'
 alias paste='xsel -o'
 
+alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
+
 # Used to locally install and use "-g" npm packages
 PATH=$PATH:node_modules/.bin
 
