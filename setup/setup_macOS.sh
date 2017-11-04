@@ -115,6 +115,11 @@ brew cask install anki
 
 hr
 
+echo "Installing: MacTeX"
+brew cask install mactex
+
+hr
+
 echo "Installing: Google Backup & Sync"
 brew cask install google-backup-and-sync
 
