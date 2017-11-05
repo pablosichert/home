@@ -125,6 +125,7 @@ bisect() { g bisect "$@"; }
 blame() { g blame "$@"; }
 branch() { g branch "$@"; }
 checkout() { g checkout "$@"; }
+clean() { g clean "$@"; }
 cleanup() { g cleanup "$@"; }
 clone() { g clone "$@"; }
 commit() { g commit "$@"; }
