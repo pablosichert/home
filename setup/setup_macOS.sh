@@ -41,126 +41,54 @@ brew cask >/dev/null
 
 hr
 
+declare -A BREW_PACKAGES
+BREW_PACKAGES=(
+    ["httpie"]="httpie"
+    ["n"]="n"
+    ["yarn"]="yarn --ignore-dependencies"
+    ["GraphicsMagick"]="graphicsmagick"
+    ["ExifTool"]="exiftool"
+)
+
+for PACKAGE in "${!BREW_PACKAGES[@]}"; do
+    echo "Installing: $PACKAGE"
+    brew install ${BREW_PACKAGES[$PACKAGE]}
+
+    hr
+done
+
 echo "Installing: brew cask fonts"
 brew tap caskroom/fonts
 
 hr
 
-echo "Installing: Fira Code font"
-brew cask install font-fira-code
+declare -A BREW_CASK_PACKAGES
+BREW_CASK_PACKAGES=(
+    ["Fira Code font"]="font-fira-code"
+    ["iTerm2"]="iterm2"
+    ["Google Chrome"]="google-chrome"
+    ["Atom"]="atom"
+    ["Docker"]="docker"
+    ["SQLite Browser"]="sqlitebrowser"
+    ["Timer"]="michaelvillar-timer"
+    ["Anki"]="anki"
+    ["MacTeX"]="mactex"
+    ["Google Backup & Sync"]="google-backup-and-sync"
+    ["Dropbox"]="dropbox"
+    ["Amazon Drive"]="amazon-drive"
+    ["WhatsApp"]="whatsapp"
+    ["Gitter"]="gitter"
+    ["Spotify"]="spotify"
+    ["Qbserve"]="qbserve"
+    ["Focus"]="focus"
+    ["Coconut Battery"]="coconutbattery"
+)
 
-hr
+for PACKAGE in "${!BREW_CASK_PACKAGES[@]}"; do
+    echo "Installing: $PACKAGE"
+    brew cask install ${BREW_CASK_PACKAGES[$PACKAGE]}
 
-echo "Installing: iTerm2"
-brew cask install iterm2
-
-hr
-
-echo "Installing: Google Chrome"
-brew cask install google-chrome
-
-hr
-
-# Install Atom
-echo "Installing: atom"
-brew cask install atom
-
-hr
+    hr
+done
 
 source ~/setup/atom-packages.sh
-
-hr
-
-echo "Installing: docker"
-brew cask install docker
-
-# Install httpie
-echo "Installing: httpie"
-brew install httpie
-
-hr
-
-# Install n
-echo "Installing: n"
-brew install n
-
-hr
-
-# Install yarn
-echo "Installing: yarn"
-brew install yarn --ignore-dependencies
-
-hr
-
-echo "Installing: GraphicsMagick"
-brew install graphicsmagick
-
-hr
-
-echo "Installing: SQLite Browser"
-brew cask install sqlitebrowser
-
-hr
-
-echo "Installing: ExifTool"
-brew install exiftool
-
-hr
-
-echo "Installing: Timer"
-brew cask install michaelvillar-timer
-
-hr
-
-echo "Installing: Anki"
-brew cask install anki
-
-hr
-
-echo "Installing: MacTeX"
-brew cask install mactex
-
-hr
-
-echo "Installing: Google Backup & Sync"
-brew cask install google-backup-and-sync
-
-hr
-
-echo "Installing: Dropbox"
-brew cask install dropbox
-
-hr
-
-echo "Installing: Amazon Drive"
-brew cask install amazon-drive
-
-hr
-
-echo "Installing: WhatsApp"
-brew cask install whatsapp
-
-hr
-
-echo "Installing: Gitter"
-brew cask install gitter
-
-hr
-
-echo "Installing: Spotify"
-brew cask install spotify
-
-hr
-
-echo "Installing: Qbserve"
-brew cask install qbserve
-
-hr
-
-echo "Installing: Focus"
-brew cask install focus
-
-hr
-
-echo "Installing: Coconut Battery"
-brew cask install coconutbattery

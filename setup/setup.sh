@@ -1,4 +1,9 @@
 #!/bin/bash
+if [[ "${BASH_VERSION%%[^0-9]*}" < "4" ]]; then
+  echo Please run this script using bash 4 or newer
+  exit 1
+fi
+
 case "$OSTYPE" in
   darwin*)
     SETUP=~/setup/setup_macOS.sh
@@ -9,7 +14,7 @@ case "$OSTYPE" in
 esac
 
 if [ ! -z $SETUP ] && [ -f $SETUP ]; then
-  $SETUP
+  bash $SETUP
   exit 0
 fi
 
