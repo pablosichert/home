@@ -15,6 +15,8 @@ hr() {
 echo "Configure dock size"
 defaults write com.apple.dock tilesize -int 45 && killall Dock
 
+hr
+
 echo "Show hidden files in Finder"
 defaults write com.apple.finder AppleShowAllFiles 1
 
