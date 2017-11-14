@@ -23,7 +23,7 @@ defaults write com.apple.finder AppleShowAllFiles 1
 hr
 
 echo "Set hibernate mode when using battery"
-pmset -b hibernatemode 25
+sudo pmset -b hibernatemode 25
 
 hr
 
