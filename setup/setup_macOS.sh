@@ -77,6 +77,7 @@ BREW_CASK_PACKAGES=(
     ["Timer"]="michaelvillar-timer"
     ["Anki"]="anki"
     ["MacTeX"]="mactex"
+    ["yEd"]="yed"
     ["Google Backup & Sync"]="google-backup-and-sync"
     ["Dropbox"]="dropbox"
     ["Amazon Drive"]="amazon-drive"
