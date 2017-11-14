@@ -45,6 +45,7 @@ declare -A BREW_PACKAGES
 BREW_PACKAGES=(
     ["tree"]="tree"
     ["htop"]="htop"
+    ["GnuPG"]="gnupg"
     ["httpie"]="httpie"
     ["n"]="n"
     ["yarn"]="yarn --ignore-dependencies"
