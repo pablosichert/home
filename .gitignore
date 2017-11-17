@@ -8,6 +8,9 @@
 !.bashrc
 !.bash_profile
 
+!bin
+!bin/*
+
 !setup
 !setup/*
 

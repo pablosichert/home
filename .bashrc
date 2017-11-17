@@ -151,5 +151,7 @@ tag() { g tag "$@"; }
 
 alias cached=staged
 
+alias java-format="java -jar ~/bin/google-java-format-1.5-all-deps.jar --replace"
+
 # Make PATH available for child processes
 export PATH
