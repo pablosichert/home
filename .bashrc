@@ -76,6 +76,8 @@ export GOPATH=~/go
 # Reference to go binaries
 PATH=$PATH:$GOPATH/bin
 
+PATH=~/bin:$PATH
+
 function g() {
     COMMAND="$1"
     shift
