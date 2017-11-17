@@ -80,7 +80,6 @@ BREW_CASK_PACKAGES=(
     ["yEd"]="yed"
     ["Google Backup & Sync"]="google-backup-and-sync"
     ["Dropbox"]="dropbox"
-    ["Amazon Drive"]="amazon-drive"
     ["WhatsApp"]="whatsapp"
     ["Gitter"]="gitter"
     ["Spotify"]="spotify"
