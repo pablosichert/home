@@ -57,15 +57,15 @@ sudo apt-get update
 hr
 
 APT_PACKAGES="
+    curl
     git
     keepass2
+    numix-icon-theme
     pidgin
     pidgin-otr
-    vim
-    curl
-    unity-tweak-tool
     ultra-flat-theme
-    numix-icon-theme
+    unity-tweak-tool
+    vim
 "
 
 for p in $APT_PACKAGES ; do

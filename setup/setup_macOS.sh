@@ -43,15 +43,15 @@ hr
 
 declare -A BREW_PACKAGES
 BREW_PACKAGES=(
-    ["tree"]="tree"
-    ["htop"]="htop"
+    ["ExifTool"]="exiftool"
     ["GnuPG"]="gnupg"
-    ["wget"]="wget"
+    ["GraphicsMagick"]="graphicsmagick"
+    ["htop"]="htop"
     ["httpie"]="httpie"
     ["n"]="n"
+    ["tree"]="tree"
+    ["wget"]="wget"
     ["yarn"]="yarn --ignore-dependencies"
-    ["GraphicsMagick"]="graphicsmagick"
-    ["ExifTool"]="exiftool"
 )
 
 for PACKAGE in "${!BREW_PACKAGES[@]}"; do
@@ -68,24 +68,24 @@ hr
 
 declare -A BREW_CASK_PACKAGES
 BREW_CASK_PACKAGES=(
-    ["Fira Code font"]="font-fira-code"
-    ["iTerm2"]="iterm2"
-    ["Google Chrome"]="google-chrome"
+    ["Anki"]="anki"
     ["Atom"]="atom"
+    ["Coconut Battery"]="coconutbattery"
     ["Docker"]="docker"
+    ["Dropbox"]="dropbox"
+    ["Fira Code font"]="font-fira-code"
+    ["Focus"]="focus"
+    ["Gitter"]="gitter"
+    ["Google Backup & Sync"]="google-backup-and-sync"
+    ["Google Chrome"]="google-chrome"
+    ["iTerm2"]="iterm2"
+    ["MacTeX"]="mactex"
+    ["Qbserve"]="qbserve"
+    ["Spotify"]="spotify"
     ["SQLite Browser"]="sqlitebrowser"
     ["Timer"]="michaelvillar-timer"
-    ["Anki"]="anki"
-    ["MacTeX"]="mactex"
-    ["yEd"]="yed"
-    ["Google Backup & Sync"]="google-backup-and-sync"
-    ["Dropbox"]="dropbox"
     ["WhatsApp"]="whatsapp"
-    ["Gitter"]="gitter"
-    ["Spotify"]="spotify"
-    ["Qbserve"]="qbserve"
-    ["Focus"]="focus"
-    ["Coconut Battery"]="coconutbattery"
+    ["yEd"]="yed"
 )
 
 for PACKAGE in "${!BREW_CASK_PACKAGES[@]}"; do

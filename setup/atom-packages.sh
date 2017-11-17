@@ -1,16 +1,16 @@
 ATOM_PACKAGES="
     atom-beautify
+    go-plus
+    language-babel
+    language-latex
+    latex
     lcov-info
     linter-eslint
-    language-babel
-    prettier-atom
-    go-plus
     minimap
     minimap-git-diff
     minimap-highlight-selected
     pdf-view
-    latex
-    language-latex
+    prettier-atom
 "
 
 # install atom plugin if not already installed
