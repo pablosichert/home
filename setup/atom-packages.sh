@@ -1,5 +1,6 @@
 ATOM_PACKAGES="
     atom-beautify
+    lcov-info
     linter-eslint
     language-babel
     prettier-atom
