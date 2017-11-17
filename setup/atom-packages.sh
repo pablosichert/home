@@ -11,6 +11,7 @@ ATOM_PACKAGES="
     minimap-highlight-selected
     pdf-view
     prettier-atom
+    sort-lines
 "
 
 # install atom plugin if not already installed
