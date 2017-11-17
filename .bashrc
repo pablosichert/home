@@ -65,10 +65,14 @@ alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 PATH=$PATH:node_modules/.bin
 
 # Path to global binaries from npm packages installed through yarn
-PATH="$(yarn global bin):$PATH"
+if type yarn &>/dev/null; then
+    PATH="$(yarn global bin):$PATH"
+fi
 
 # Go version manager
-source ~/.gvm/scripts/gvm
+if [[ -s "~/.gvm/scripts/gvm" ]]; then
+    source ~/.gvm/scripts/gvm
+fi
 
 # Configure go path (overwrite GOPATH set by gvm)
 export GOPATH=~/go
