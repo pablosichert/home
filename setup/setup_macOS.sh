@@ -18,7 +18,7 @@ defaults write com.apple.dock tilesize -int 45 && killall Dock
 hr
 
 echo "Show hidden files in Finder"
-defaults write com.apple.finder AppleShowAllFiles 1
+defaults write com.apple.Finder AppleShowAllFiles 1
 
 hr
 
