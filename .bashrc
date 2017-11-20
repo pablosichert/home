@@ -147,6 +147,7 @@ push() { g push "$@"; }
 rebase() { g rebase "$@"; }
 remote() { g remote "$@"; }
 reset() { g reset "$@"; }
+revert() { g revert "$@"; }
 show() { g show "$@"; }
 staged() { g staged "$@"; }
 stash() { g stash "$@"; }
