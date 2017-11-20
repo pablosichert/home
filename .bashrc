@@ -136,8 +136,8 @@ cleanup() { g cleanup "$@"; }
 clone() { g clone "$@"; }
 commit() { g commit "$@"; }
 diff() { g diff "$@"; }
-fixup() { g fixup "$@"; }
 fetch() { g fetch "$@"; }
+fixup() { g fixup "$@"; }
 force() { g force "$@"; }
 log() { g log "$@"; }
 merge() { g merge "$@"; }
