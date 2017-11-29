@@ -95,4 +95,9 @@ for PACKAGE in "${!BREW_CASK_PACKAGES[@]}"; do
     hr
 done
 
+echo "Disable swipe navigation gestures in Chrome"
+defaults write com.google.Chrome.plist AppleEnableSwipeNavigateWithScrolls -bool FALSE
+
+hr
+
 source ~/setup/atom-packages.sh
