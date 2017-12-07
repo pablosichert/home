@@ -79,6 +79,7 @@ BREW_CASK_PACKAGES=(
     ["Google Backup & Sync"]="google-backup-and-sync"
     ["Google Chrome"]="google-chrome"
     ["iTerm2"]="iterm2"
+    ["Lighting"]="lighting"
     ["MacTeX"]="mactex"
     ["Qbserve"]="qbserve"
     ["Spotify"]="spotify"
