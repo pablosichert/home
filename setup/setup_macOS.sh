@@ -74,6 +74,7 @@ BREW_CASK_PACKAGES=(
     ["Docker"]="docker"
     ["Dropbox"]="dropbox"
     ["Fira Code font"]="font-fira-code"
+    ["Firefox"]="firefox"
     ["Focus"]="focus"
     ["Gitter"]="gitter"
     ["Google Backup & Sync"]="google-backup-and-sync"
