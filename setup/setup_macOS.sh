@@ -81,6 +81,7 @@ BREW_CASK_PACKAGES=(
     ["iTerm2"]="iterm2"
     ["Lighting"]="lighting"
     ["MacTeX"]="mactex"
+    ["MuseScore"]="musescore"
     ["Qbserve"]="qbserve"
     ["Spotify"]="spotify"
     ["SQLite Browser"]="sqlitebrowser"
