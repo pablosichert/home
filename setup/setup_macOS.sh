@@ -79,6 +79,7 @@ BREW_CASK_PACKAGES=(
     ["Gitter"]="gitter"
     ["Google Backup & Sync"]="google-backup-and-sync"
     ["Google Chrome"]="google-chrome"
+    ["InsomniaX"]="insomniax"
     ["iTerm2"]="iterm2"
     ["Lighting"]="lighting"
     ["MacTeX"]="mactex"
