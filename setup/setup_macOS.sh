@@ -88,6 +88,7 @@ BREW_CASK_PACKAGES=(
     ["Spotify"]="spotify"
     ["SQLite Browser"]="db-browser-for-sqlite"
     ["Timer"]="michaelvillar-timer"
+    ["VLC media player"]="vlc"
     ["WhatsApp"]="whatsapp"
     ["yEd"]="yed"
 )
