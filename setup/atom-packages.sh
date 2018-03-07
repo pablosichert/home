@@ -15,11 +15,11 @@ ATOM_PACKAGES="
 "
 
 # install atom plugin if not already installed
-for p in $ATOM_PACKAGES ; do
-    if [ -d ~/.atom/packages/$p ] ; then
-        echo "Skipping atom plugin: $p (already installed)"
+for package in $ATOM_PACKAGES ; do
+    if [ -d ~/.atom/packages/$package ] ; then
+        echo "Skipping atom plugin: $package (already installed)"
     else
-        apm install $p
+        apm install $package
     fi
     hr
 done

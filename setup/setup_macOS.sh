@@ -89,6 +89,7 @@ BREW_CASK_PACKAGES=(
     ["SQLite Browser"]="db-browser-for-sqlite"
     ["Timer"]="michaelvillar-timer"
     ["VLC media player"]="vlc"
+    ["VS Code"]="visual-studio-code"
     ["WhatsApp"]="whatsapp"
     ["yEd"]="yed"
 )
@@ -106,3 +107,4 @@ defaults write com.google.Chrome.plist AppleEnableSwipeNavigateWithScrolls -bool
 hr
 
 source ~/setup/atom-packages.sh
+source ~/setup/vscode-packages.sh
