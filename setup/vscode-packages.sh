@@ -1,6 +1,7 @@
 VSCODE_PACKAGES="
     akamud.vscode-theme-onelight
     dbaeumer.vscode-eslint
+    esbenp.prettier-vscode
     Tyriar.sort-lines
 "
 

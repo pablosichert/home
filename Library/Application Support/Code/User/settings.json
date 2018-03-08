@@ -1,8 +1,11 @@
 {
-    "editor.fontFamily": "Fira Code",
-    "editor.fontLigatures": true,
-    "editor.fontSize": 14,
-    "editor.renderControlCharacters": true,
-    "editor.renderWhitespace": "boundary",
-    "workbench.colorTheme": "Atom One Light"
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.formatOnSave": true,
+  "editor.renderControlCharacters": true,
+  "editor.renderWhitespace": "boundary",
+  "prettier.eslintIntegration": true,
+  "workbench.colorTheme": "Atom One Light",
+  "workbench.startupEditor": "none"
 }
