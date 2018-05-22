@@ -49,6 +49,7 @@ BREW_PACKAGES=(
     ["htop"]="htop"
     ["httpie"]="httpie"
     ["n"]="n"
+    ["tig"]="tig"
     ["tree"]="tree"
     ["wget"]="wget"
     ["yarn"]="yarn --ignore-dependencies"
