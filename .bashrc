@@ -82,6 +82,9 @@ PATH=$PATH:$GOPATH/bin
 
 PATH=~/bin:$PATH
 
+# Search in current directory for a bin folder
+PATH=./bin:$PATH
+
 function g() {
     COMMAND="$1"
     shift
