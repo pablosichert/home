@@ -148,6 +148,7 @@ pick() { g pick "$@"; }
 pull() { g pull "$@"; }
 push() { g push "$@"; }
 rebase() { g rebase "$@"; }
+reflog() { g reflog "$@"; }
 remote() { g remote "$@"; }
 reset() { g reset "$@"; }
 revert() { g revert "$@"; }
