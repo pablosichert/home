@@ -77,7 +77,6 @@ BREW_CASK_PACKAGES=(
     ["Fira Code font"]="font-fira-code"
     ["Firefox"]="firefox"
     ["Focus"]="focus"
-    ["Gitter"]="gitter"
     ["Google Backup & Sync"]="google-backup-and-sync"
     ["Google Chrome"]="google-chrome"
     ["InsomniaX"]="insomniax"
