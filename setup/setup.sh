@@ -1,6 +1,10 @@
 #!/bin/bash
-if [[ "${BASH_VERSION%%[^0-9]*}" < "4" ]]; then
-    echo Please run this script using bash 4 or newer
+function supports_associative_arrays {
+    declare -A FOO
+}
+
+if ! supports_associative_arrays &> /dev/null; then
+    echo Your shell needs to support associative arrays to run this script
     exit 1
 fi
 
