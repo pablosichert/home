@@ -70,7 +70,6 @@ hr
 declare -A BREW_CASK_PACKAGES
 BREW_CASK_PACKAGES=(
     ["Anki"]="anki"
-    ["Atom"]="atom"
     ["Coconut Battery"]="coconutbattery"
     ["Docker"]="docker"
     ["Dropbox"]="dropbox"
@@ -107,5 +106,4 @@ defaults write com.google.Chrome.plist AppleEnableSwipeNavigateWithScrolls -bool
 
 hr
 
-source ~/setup/atom-packages.sh
 source ~/setup/vscode-packages.sh

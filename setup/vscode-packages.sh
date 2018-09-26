@@ -6,7 +6,7 @@ VSCODE_PACKAGES="
     Tyriar.sort-lines
 "
 
-# install atom plugin if not already installed
+# install VS Code plugin if not already installed
 for package in $VSCODE_PACKAGES ; do
     code --install-extension $package
     hr

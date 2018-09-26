@@ -75,22 +75,6 @@ for p in $APT_PACKAGES ; do
     hr
 done
 
-if shouldInstall atom ; then
-    mkdir -p ~/Sources/
-    wget https://atom.io/download/deb \
-        -nv \
-        --show-progress \
-        -O ~/Sources/atom_stable.deb
-    sudo dpkg -i ~/Sources/atom_stable.deb
-    echo Done: atom
-fi
-
-hr
-
-source ~/setup/atom-packages.sh
-
-hr
-
 # Installing spotify client from testing repository instead of
 # stable, because of a dependency on libgcrypt.so.11 not shipped
 # with ubuntu 15.10
