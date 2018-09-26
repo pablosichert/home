@@ -48,6 +48,7 @@ BREW_PACKAGES=(
     ["GraphicsMagick"]="graphicsmagick"
     ["htop"]="htop"
     ["httpie"]="httpie"
+    ["jq"]="jq"
     ["n"]="n"
     ["tig"]="tig"
     ["tree"]="tree"
