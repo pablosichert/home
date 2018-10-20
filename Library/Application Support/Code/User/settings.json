@@ -7,5 +7,6 @@
   "editor.renderWhitespace": "boundary",
   "prettier.eslintIntegration": true,
   "workbench.colorTheme": "Atom One Light",
-  "workbench.startupEditor": "none"
+  "workbench.startupEditor": "none",
+  "workbench.editor.closeEmptyGroups": false
 }
