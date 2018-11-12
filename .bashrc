@@ -69,17 +69,6 @@ if type yarn &>/dev/null; then
     PATH="$(yarn global bin):$PATH"
 fi
 
-# Go version manager
-if [[ -s "~/.gvm/scripts/gvm" ]]; then
-    source ~/.gvm/scripts/gvm
-fi
-
-# Configure go path (overwrite GOPATH set by gvm)
-export GOPATH=~/go
-
-# Reference to go binaries
-PATH=$PATH:$GOPATH/bin
-
 PATH=~/bin:$PATH
 
 # Search in current directory for a bin folder
