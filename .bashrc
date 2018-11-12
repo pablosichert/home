@@ -156,6 +156,7 @@ show() { g show "$@"; }
 staged() { g staged "$@"; }
 stash() { g stash "$@"; }
 status() { g status "$@"; }
+submodule() { g submodule "$@"; }
 tag() { g tag "$@"; }
 
 alias cached=staged
