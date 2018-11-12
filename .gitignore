@@ -1,44 +1,30 @@
 # Ignore all by default
 *
 */
-!.gitignore
 
+# Git configuration files
+!.gitignore
 !.gitconfig
-!.inputrc
+
+# Bash configuration files
 !.bashrc
 !.bash_profile
+!.inputrc
 
-!bin
+# Bash default modules
+!.bashrc.d/default/*
+
+# Executables
 !bin/*
 
-!setup
+# OS setup
 !setup/*
 
 # iTerm2 profile
-!.iTerm2
 !.iTerm2/*
 
-# Atom editor config files
-!.atom
-.atom/*
-!.atom/config.cson
-!.atom/snippets.cson
-
 # VS Code config files
-!Library
-Library/*
-!Library/Application Support
-Library/Application Support/*
-!Library/Application Support/Code
-Library/Application Support/Code/*
-!Library/Application Support/Code/User
-Library/Application Support/Code/User/*
 !Library/Application Support/Code/User/settings.json
 
 # Font files
-!.local
-.local/*
-!.local/share
-.local/share/*
-!.local/share/fonts
 !.local/share/fonts/*

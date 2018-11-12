@@ -8,171 +8,18 @@ case $- in
       *) return;;
 esac
 
-DIM="\e[2m"
-BLUE="\e[38;2;0;160;255m"
-END="\e[0m"
+# Don't return glob pattern when no match was found
+shopt -s nullglob
 
-if [ -n "$SSH_CONNECTION" ]; then
-    HOST="\h "
-fi
+# Load default bash configuration
+for module in ~/.bashrc.d/default/*; do
+    source $module
+done
 
-PS1="$HOST\[$DIM\]\W\[$END\] \[$BLUE\]$\[$END\] "
-
-# Don't put duplicate lines or lines starting with space in the history.
-# See bash(1) for more options
-HISTCONTROL=ignoreboth
-
-# Append to the history file, don't overwrite it
-shopt -s histappend
-
-# For setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE= # The sky is the limit
-HISTFILESIZE= # The sky is the limit
-
-# Enable programmable completion features
-if ! shopt -oq posix; then
-  if [ -f /usr/share/bash-completion/bash_completion ]; then
-    . /usr/share/bash-completion/bash_completion
-  elif [ -f /etc/bash_completion ]; then
-    . /etc/bash_completion
-  fi
-fi
-
-# Check the window size after each command and, if necessary,
-# update the values of LINES and COLUMNS.
-shopt -s checkwinsize
-
-# Enable color support of ls and also add handy aliases
-if [ -x /usr/bin/dircolors ]; then
-    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
-    alias grep='grep --color=auto'
-    alias fgrep='fgrep --color=auto'
-    alias egrep='egrep --color=auto'
-fi
-
-# ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
-
-alias copy='xsel -i'
-alias paste='xsel -o'
-
-alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
-
-# Used to locally install and use "-g" npm packages
-PATH=$PATH:node_modules/.bin
-
-# Path to global binaries from npm packages installed through yarn
-if type yarn &>/dev/null; then
-    PATH="$(yarn global bin):$PATH"
-fi
-
-PATH=~/bin:$PATH
-
-# Search in current directory for a bin folder
-PATH=./bin:$PATH
-
-function g() {
-    COMMAND="$1"
-    shift
-
-    case "$COMMAND" in
-        "amend")
-            git commit --amend "$@"
-        ;;
-        "cleanup")
-            git branch --merged | grep -v "\*" | xargs git branch -d
-        ;;
-        "diff")
-            git diff "$@"
-        ;;
-        "fixup")
-            COMMIT="$1"
-            shift
-            git commit --fixup="$COMMIT" "$@"
-            git rebase -i --autosquash "$COMMIT"~1 "$@"
-            # unshift
-            set -- "$1" "$@"
-        ;;
-        "force")
-            git push --force-with-lease "$@"
-        ;;
-        "log")
-            git log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset' "$@"
-        ;;
-        "pick")
-            git cherry-pick "$@"
-        ;;
-        "rebase")
-            git rebase -i "$@"
-        ;;
-        "staged")
-            git diff --staged "$@"
-        ;;
-        *)
-            git $COMMAND "$@"
-        ;;
-    esac
-}
-
-add() { g add "$@"; }
-amend() { g amend "$@"; }
-bisect() { g bisect "$@"; }
-blame() { g blame "$@"; }
-branch() { g branch "$@"; }
-checkout() { g checkout "$@"; }
-clean() { g clean "$@"; }
-cleanup() { g cleanup "$@"; }
-clone() { g clone "$@"; }
-commit() { g commit "$@"; }
-diff() { g diff "$@"; }
-fetch() { g fetch "$@"; }
-fixup() { g fixup "$@"; }
-force() { g force "$@"; }
-log() { g log "$@"; }
-merge() { g merge "$@"; }
-pick() { g pick "$@"; }
-pull() { g pull "$@"; }
-push() { g push "$@"; }
-rebase() { g rebase "$@"; }
-reflog() { g reflog "$@"; }
-remote() { g remote "$@"; }
-reset() { g reset "$@"; }
-revert() { g revert "$@"; }
-show() { g show "$@"; }
-staged() { g staged "$@"; }
-stash() { g stash "$@"; }
-status() { g status "$@"; }
-submodule() { g submodule "$@"; }
-tag() { g tag "$@"; }
-
-alias cached=staged
-
-alias java-format="java -jar ~/bin/google-java-format-1.5-all-deps.jar --replace"
-j() { java-format $@.java && javac $@.java && java $@; }
-
-# Creates a temporary folder and calls the provided commands with the temporary
-# directory path as an argument
-function tmp() {
-    # If no arguments have been passed in
-    if ! (($#)); then
-        echo "Usage:
-
-~ $ tmp echo cd
-/some/tmp/dir
-/some/tmp/dir $"
-
-        return 1
-    fi
-
-    local TEMPORARY_DIRECTORY=$(mktemp -d)
-
-    for COMMAND in "$@"; do
-        $COMMAND $TEMPORARY_DIRECTORY
-    done
-}
+# Load custom bash configuration
+for module in ~/.bashrc.d/custom/*; do
+    source $module
+done
 
 # Make PATH available for child processes
 export PATH
