@@ -10,5 +10,6 @@
   "workbench.startupEditor": "none",
   "workbench.editor.closeEmptyGroups": false,
   "C_Cpp.clang_format_fallbackStyle": "LLVM",
-  "latex-workshop.view.pdf.viewer": "tab"
+  "latex-workshop.view.pdf.viewer": "tab",
+  "explorer.confirmDelete": false
 }
