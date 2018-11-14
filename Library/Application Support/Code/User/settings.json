@@ -9,5 +9,6 @@
   "workbench.colorTheme": "Atom One Light",
   "workbench.startupEditor": "none",
   "workbench.editor.closeEmptyGroups": false,
-  "C_Cpp.clang_format_fallbackStyle": "LLVM"
+  "C_Cpp.clang_format_fallbackStyle": "LLVM",
+  "latex-workshop.view.pdf.viewer": "tab"
 }
