@@ -3,7 +3,11 @@ BLUE="\e[38;2;0;160;255m"
 END="\e[0m"
 
 if [ -n "$SSH_CONNECTION" ]; then
-    HOST="\h "
+    PROMPT_PREFIX="\h "
 fi
 
-PS1="$HOST\[$DIM\]\W\[$END\] \[$BLUE\]$\[$END\] "
+function prompt {
+    PS1="$PROMPT_PREFIX$HOST\[$DIM\]\W\[$END\] \[$BLUE\]$\[$END\] "
+}
+
+PROMPT_COMMAND=prompt
