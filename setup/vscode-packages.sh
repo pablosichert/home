@@ -3,6 +3,7 @@ VSCODE_PACKAGES="
     dbaeumer.vscode-eslint
     eamodio.gitlens
     esbenp.prettier-vscode
+    james-yu.latex-workshop
     Tyriar.sort-lines
 "
 
