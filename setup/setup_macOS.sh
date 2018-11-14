@@ -17,6 +17,11 @@ defaults write com.apple.dock tilesize -int 45 && killall Dock
 
 hr
 
+echo "Don't create .DS_Store files"
+defaults write com.apple.desktopservices DSDontWriteNetworkStores true
+
+hr
+
 echo "Show hidden files in Finder"
 defaults write com.apple.Finder AppleShowAllFiles 1
 
