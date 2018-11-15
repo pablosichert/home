@@ -11,5 +11,6 @@
   "workbench.editor.closeEmptyGroups": false,
   "C_Cpp.clang_format_fallbackStyle": "LLVM",
   "latex-workshop.view.pdf.viewer": "tab",
-  "explorer.confirmDelete": false
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false
 }
