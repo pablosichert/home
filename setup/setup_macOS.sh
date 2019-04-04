@@ -23,7 +23,7 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 hr
 
 echo "Show hidden files in Finder"
-defaults write com.apple.Finder AppleShowAllFiles 1
+defaults write com.apple.Finder AppleShowAllFiles 1 && killall Finder
 
 hr
 
