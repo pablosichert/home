@@ -58,7 +58,6 @@ BREW_PACKAGES=(
     ["tig"]="tig"
     ["tree"]="tree"
     ["wget"]="wget"
-    ["yarn"]="yarn --ignore-dependencies"
 )
 
 for PACKAGE in "${!BREW_PACKAGES[@]}"; do
