@@ -11,7 +11,7 @@ if [ -n "$SSH_CONNECTION" ]; then
     PROMPT_PREFIX="\h "
 fi
 
-# If effectiev user is root
+# If effective user is root
 if [ $(id -u) == "0" ]; then
     PROMPT_COLOR="$RED"
 fi
