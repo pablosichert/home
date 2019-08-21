@@ -12,5 +12,8 @@
   "C_Cpp.clang_format_fallbackStyle": "LLVM",
   "latex-workshop.view.pdf.viewer": "tab",
   "explorer.confirmDelete": false,
-  "explorer.confirmDragAndDrop": false
+  "explorer.confirmDragAndDrop": false,
+  "bracket-pair-colorizer-2.colors": [
+    "Black"
+  ],
 }

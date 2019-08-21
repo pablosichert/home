@@ -1,5 +1,6 @@
 VSCODE_PACKAGES="
     akamud.vscode-theme-onelight
+    coenraads.bracket-pair-colorizer-2
     dbaeumer.vscode-eslint
     eamodio.gitlens
     esbenp.prettier-vscode
