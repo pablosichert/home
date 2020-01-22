@@ -75,6 +75,7 @@ hr
 declare -A BREW_CASK_PACKAGES
 BREW_CASK_PACKAGES=(
     ["Anki"]="anki"
+    ["Autumn"]="autumn"
     ["Coconut Battery"]="coconutbattery"
     ["Docker"]="docker"
     ["Fira Code font"]="font-fira-code"
