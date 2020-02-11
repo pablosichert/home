@@ -17,4 +17,5 @@
   "bracket-pair-colorizer-2.colors": [
     "Black"
   ],
+  "workbench.iconTheme": "material-icon-theme",
 }
