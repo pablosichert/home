@@ -18,4 +18,5 @@
     "Black"
   ],
   "workbench.iconTheme": "material-icon-theme",
+  "rust-analyzer.displayInlayHints": false,
 }
