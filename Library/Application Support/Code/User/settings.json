@@ -6,7 +6,6 @@
   "editor.renderControlCharacters": true,
   "editor.renderWhitespace": "boundary",
   "editor.rulers": [80, 100, 120],
-  "prettier.eslintIntegration": true,
   "workbench.colorTheme": "Atom One Light",
   "workbench.startupEditor": "none",
   "workbench.editor.closeEmptyGroups": false,
@@ -14,9 +13,6 @@
   "latex-workshop.view.pdf.viewer": "tab",
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
-  "bracket-pair-colorizer-2.colors": [
-    "Black"
-  ],
-  "workbench.iconTheme": "material-icon-theme",
-  "rust-analyzer.displayInlayHints": false,
+  "bracket-pair-colorizer-2.colors": ["Black"],
+  "workbench.iconTheme": "material-icon-theme"
 }
