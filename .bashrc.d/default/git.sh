@@ -9,9 +9,6 @@ function g() {
         "cleanup")
             git branch --merged | grep -v "\*" | xargs git branch -d
         ;;
-        "diff")
-            git diff "$@"
-        ;;
         "fixup")
             COMMIT="$1"
             shift
@@ -43,6 +40,7 @@ function g() {
 
 add() { g add "$@"; }
 amend() { g amend "$@"; }
+apply() { g apply "$@"; }
 bisect() { g bisect "$@"; }
 blame() { g blame "$@"; }
 branch() { g branch "$@"; }
@@ -51,6 +49,7 @@ clean() { g clean "$@"; }
 cleanup() { g cleanup "$@"; }
 clone() { g clone "$@"; }
 commit() { g commit "$@"; }
+config() { g config "$@"; }
 diff() { g diff "$@"; }
 fetch() { g fetch "$@"; }
 fixup() { g fixup "$@"; }
