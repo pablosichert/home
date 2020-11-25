@@ -52,7 +52,6 @@ BREW_PACKAGES=(
     ["GnuPG"]="gnupg"
     ["GraphicsMagick"]="graphicsmagick"
     ["htop"]="htop"
-    ["httpie"]="httpie"
     ["jq"]="jq"
     ["n"]="n"
     ["tig"]="tig"
@@ -74,7 +73,6 @@ hr
 
 declare -A BREW_CASK_PACKAGES
 BREW_CASK_PACKAGES=(
-    ["Anki"]="anki"
     ["Autumn"]="autumn"
     ["Coconut Battery"]="coconutbattery"
     ["Docker"]="docker"
@@ -84,17 +82,13 @@ BREW_CASK_PACKAGES=(
     ["Google Chrome"]="google-chrome"
     ["InsomniaX"]="insomniax"
     ["iTerm2"]="iterm2"
-    ["Lighting"]="lighting"
     ["MacTeX"]="mactex"
-    ["MuseScore"]="musescore"
     ["Qbserve"]="qbserve"
     ["Spotify"]="spotify"
     ["SQLite Browser"]="db-browser-for-sqlite"
-    ["Timer"]="michaelvillar-timer"
     ["VLC media player"]="vlc"
     ["VS Code"]="visual-studio-code"
     ["WhatsApp"]="whatsapp"
-    ["yEd"]="yed"
 )
 
 for PACKAGE in "${!BREW_CASK_PACKAGES[@]}"; do
