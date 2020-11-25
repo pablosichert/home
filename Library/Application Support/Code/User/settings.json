@@ -14,5 +14,8 @@
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "bracket-pair-colorizer-2.colors": ["Black"],
-  "workbench.iconTheme": "material-icon-theme"
+  "workbench.iconTheme": "material-icon-theme",
+  "rust-analyzer.inlayHints.typeHints": false,
+  "rust-analyzer.inlayHints.parameterHints": false,
+  "rust-analyzer.inlayHints.chainingHints": false
 }
