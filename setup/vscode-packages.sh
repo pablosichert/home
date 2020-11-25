@@ -5,6 +5,7 @@ VSCODE_PACKAGES="
     eamodio.gitlens
     esbenp.prettier-vscode
     james-yu.latex-workshop
+    matklad.rust-analyzer
     PKief.material-icon-theme
     Tyriar.sort-lines
 "
