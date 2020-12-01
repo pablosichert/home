@@ -78,6 +78,7 @@ BREW_CASK_PACKAGES=(
     ["MacTeX"]="mactex"
     ["Nextcloud"]="nextcloud"
     ["Qbserve"]="qbserve"
+    ["Signal"]="signal"
     ["Spotify"]="spotify"
     ["SQLite Browser"]="db-browser-for-sqlite"
     ["VLC media player"]="vlc"
