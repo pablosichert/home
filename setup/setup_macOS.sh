@@ -82,7 +82,6 @@ BREW_CASK_PACKAGES=(
     ["Firefox"]="firefox"
     ["Focus"]="focus"
     ["Google Chrome"]="google-chrome"
-    ["InsomniaX"]="insomniax"
     ["iTerm2"]="iterm2"
     ["MacTeX"]="mactex"
     ["Nextcloud"]="nextcloud"
