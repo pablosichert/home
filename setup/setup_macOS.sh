@@ -38,12 +38,6 @@ fi
 
 hr
 
-# Install Homebrew Cask
-echo "Installing: brew cask"
-brew cask >/dev/null
-
-hr
-
 declare -A BREW_PACKAGES
 BREW_PACKAGES=(
     ["ExifTool"]="exiftool"
