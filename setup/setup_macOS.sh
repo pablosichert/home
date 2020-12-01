@@ -83,6 +83,7 @@ BREW_CASK_PACKAGES=(
     ["InsomniaX"]="insomniax"
     ["iTerm2"]="iterm2"
     ["MacTeX"]="mactex"
+    ["Nextcloud"]="nextcloud"
     ["Qbserve"]="qbserve"
     ["Spotify"]="spotify"
     ["SQLite Browser"]="db-browser-for-sqlite"
