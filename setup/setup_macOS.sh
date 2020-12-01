@@ -76,6 +76,7 @@ BREW_CASK_PACKAGES=(
     ["Autumn"]="autumn"
     ["Chromium"]="chromium"
     ["Coconut Battery"]="coconutbattery"
+    ["Discord"]="discord"
     ["Docker"]="docker"
     ["Fira Code font"]="font-fira-code"
     ["Firefox"]="firefox"
