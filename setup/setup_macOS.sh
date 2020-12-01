@@ -1,5 +1,3 @@
-#!/bin/bash
-
 # hr: create a line of dashes as wide as your terminal.
 # adopted from: https://github.com/LuRsT/hr/blob/master/hr
 hr() {

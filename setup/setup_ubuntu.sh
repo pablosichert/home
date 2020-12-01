@@ -1,5 +1,3 @@
-#!/bin/bash
-
 # Took heavy inspiration from https://raw.githubusercontent.com/gustavnikolaj/dotfiles/master/setup.sh
 
 # hr: create a line of dashes as wide as your terminal.

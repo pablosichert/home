@@ -1,7 +1,13 @@
-#!/bin/bash
 function supports_associative_arrays {
     declare -A FOO
 }
+
+echo "Running setup script"
+
+SHELL_EXECUTABLE="$(ps -p $$ -ocomm=)"
+SHELL_VERSION="$($SHELL_EXECUTABLE --version)"
+
+echo "Shell version: $SHELL_VERSION"
 
 if ! supports_associative_arrays &> /dev/null; then
     echo Your shell needs to support associative arrays to run this script
