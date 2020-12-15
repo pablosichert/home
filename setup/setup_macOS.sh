@@ -81,6 +81,7 @@ BREW_CASK_PACKAGES=(
     ["Signal"]="signal"
     ["Spotify"]="spotify"
     ["SQLite Browser"]="db-browser-for-sqlite"
+    ["Telegram"]="telegram"
     ["VLC media player"]="vlc"
     ["VS Code"]="visual-studio-code"
     ["WhatsApp"]="whatsapp"
