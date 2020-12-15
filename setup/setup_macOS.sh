@@ -59,7 +59,7 @@ for PACKAGE in "${!BREW_PACKAGES[@]}"; do
 done
 
 echo "Installing: brew cask fonts"
-brew tap caskroom/fonts
+brew tap homebrew/cask-fonts
 
 hr
 
