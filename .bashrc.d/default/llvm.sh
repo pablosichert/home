@@ -1,1 +1,1 @@
-export PATH="/usr/local/opt/llvm/bin:$PATH"
+export PATH="$(brew --prefix llvm)/bin:$PATH"
