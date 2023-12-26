@@ -36,14 +36,16 @@ hr
 # Install Homebrew
 echo "Installing: brew"
 if ! type brew &>/dev/null; then
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
 hr
 
 declare -A BREW_PACKAGES
 BREW_PACKAGES=(
+    ["CMake"]="cmake"
     ["ExifTool"]="exiftool"
+    ["GNU File, Shell, and Text utilities"]="coreutils"
     ["GnuPG"]="gnupg"
     ["GraphicsMagick"]="graphicsmagick"
     ["htop"]="htop"
@@ -70,10 +72,9 @@ declare -A BREW_CASK_PACKAGES
 BREW_CASK_PACKAGES=(
     ["Autumn"]="autumn"
     ["Chromium"]="chromium"
-    ["Coconut Battery"]="coconutbattery"
     ["Discord"]="discord"
     ["Docker"]="docker"
-    ["Fira Code font"]="font-fira-code"
+    ["Element"]="element"
     ["Firefox"]="firefox"
     ["Focus"]="focus"
     ["Google Chrome"]="google-chrome"
@@ -93,7 +94,7 @@ BREW_CASK_PACKAGES=(
 
 for PACKAGE in "${!BREW_CASK_PACKAGES[@]}"; do
     echo "Installing: $PACKAGE"
-    brew cask install ${BREW_CASK_PACKAGES[$PACKAGE]}
+    brew install --cask ${BREW_CASK_PACKAGES[$PACKAGE]}
 
     hr
 done
