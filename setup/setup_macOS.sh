@@ -26,7 +26,10 @@ defaults write com.apple.Finder AppleShowAllFiles 1 && killall Finder
 hr
 
 echo "Set hibernate mode when using battery"
-sudo pmset -b hibernatemode 25
+sudo pmset -b hibernatemode 3
+
+echo "Disable swap, compress memory only"
+sudo nvram boot-args="vm_compressor=2"
 
 hr
 
