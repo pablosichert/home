@@ -10,8 +10,35 @@ hr() {
     echo "${LINE}"
 }
 
-echo "Configure dock size"
-defaults write com.apple.dock tilesize -int 45 && killall Dock
+# The corresponding defaults keys can be discovered by running `defaults read`
+# and observing how the output changes after modifying system settings.
+
+echo "Configure keyboard"
+defaults write -g ApplePressAndHoldEnabled -bool true
+defaults write -g InitialKeyRepeat -int 10
+defaults write -g KeyRepeat -int 2
+
+hr
+
+echo "Configure trackpad"
+defaults write -g com.apple.trackpad.scaling -float 3
+defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
+defaults write com.apple.AppleMultitouchTrackpad FirstClickThreshold -int 2
+defaults write com.apple.AppleMultitouchTrackpad SecondClickThreshold -int 2
+
+hr
+
+echo "Configure gestures"
+defaults write com.apple.dock showAppExposeGestureEnabled -bool true
+
+hr
+
+echo "Configure dock"
+defaults write com.apple.dock orientation -string left
+defaults write com.apple.dock tilesize -int 45
+defaults write com.apple.dock "show-recents" -bool false
+defaults write com.apple.dock "minimize-to-application" -bool true
+killall Dock
 
 hr
 
@@ -20,8 +47,10 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 
 hr
 
-echo "Show hidden files in Finder"
-defaults write com.apple.Finder AppleShowAllFiles 1 && killall Finder
+echo "Show hidden files and extensions in Finder"
+defaults write com.apple.Finder AppleShowAllFiles -bool true
+defaults write -g AppleShowAllExtensions -bool true
+killall Finder
 
 hr
 
@@ -99,7 +128,7 @@ for PACKAGE in "${!BREW_CASK_PACKAGES[@]}"; do
 done
 
 echo "Disable swipe navigation gestures in Chrome"
-defaults write com.google.Chrome.plist AppleEnableSwipeNavigateWithScrolls -bool FALSE
+defaults write com.google.Chrome.plist AppleEnableSwipeNavigateWithScrolls -bool false
 
 hr
 
