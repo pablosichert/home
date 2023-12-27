@@ -1,2 +1,0 @@
-#!/bin/bash
-java -jar ~/bin/jasmin-1.5.11.jar $@
