@@ -1,13 +1,12 @@
 VSCODE_PACKAGES="
     akamud.vscode-theme-onelight
-    coenraads.bracket-pair-colorizer-2
-    dbaeumer.vscode-eslint
+    dnicolson.binary-plist
     eamodio.gitlens
     esbenp.prettier-vscode
     james-yu.latex-workshop
-    matklad.rust-analyzer
-    PKief.material-icon-theme
-    Tyriar.sort-lines
+    pkief.material-icon-theme
+    rust-lang.rust-analyzer
+    vadimcn.vscode-lldb
 "
 
 # install VS Code plugin if not already installed

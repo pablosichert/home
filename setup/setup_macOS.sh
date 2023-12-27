@@ -73,7 +73,6 @@ BREW_CASK_PACKAGES=(
     ["Autumn"]="autumn"
     ["Chromium"]="chromium"
     ["Discord"]="discord"
-    ["Docker"]="docker"
     ["Element"]="element"
     ["Firefox"]="firefox"
     ["Focus"]="focus"
