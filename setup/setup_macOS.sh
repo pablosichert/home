@@ -28,6 +28,11 @@ defaults write com.apple.AppleMultitouchTrackpad SecondClickThreshold -int 2
 
 hr
 
+echo "Configure mouse"
+defaults write -g com.apple.trackpad.scaling -float 2
+
+hr
+
 echo "Configure gestures"
 defaults write com.apple.dock showAppExposeGestureEnabled -bool true
 
@@ -57,7 +62,10 @@ hr
 echo "Set hibernate mode when using battery"
 sudo pmset -b hibernatemode 3
 
+hr
+
 echo "Disable swap, compress memory only"
+# Boot into recovery mode and run `csrutil disable`
 sudo nvram boot-args="vm_compressor=2"
 
 hr
